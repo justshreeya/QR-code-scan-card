@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* Root color variables */
+
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --slate-300: hsl(212, 45%, 89%);
+        --slate-500: hsl(216, 15%, 48%);
+        --slate-900: hsl(218, 44%, 22%);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+       body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--slate-300);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--white);
+      border-radius: 1.25rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      max-width: 320px;
+      width: 100%;
+      padding: 1.25rem;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 0.75rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 0.8rem;
+      padding: 0 1.5rem;
+    }
+
+    .card p {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--slate-500);
+       max-width: 230px; /* Adjust to force line break */
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+      line-height: 1.5;
+
+    }
+
+    @media (min-width: 1440px) {
+      .card {
+        max-width: 360px;
+      }
+
+      .card h2 {
+        font-size: 1.35rem;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="./images/image-qr-code.png" alt="QR code" />
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+  </body>
+</html>
